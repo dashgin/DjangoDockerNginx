@@ -1,5 +1,5 @@
-from .base import *
-
+from .base import * # noqa
+import os
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 DEBUG = int(os.environ.get("DEBUG", default=0))
